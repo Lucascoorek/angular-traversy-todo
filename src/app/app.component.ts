@@ -7,4 +7,10 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   name: string = "Kasia";
+  constructor() {
+    this.changeName("Witek");
+  }
+  changeName(name: string): void {
+    this.name = name;
+  }
 }
