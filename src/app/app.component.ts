@@ -5,12 +5,4 @@ import { Component } from "@angular/core";
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.css"]
 })
-export class AppComponent {
-  name: string = "Kasia";
-  constructor() {
-    this.changeName("Witek");
-  }
-  changeName(name: string): void {
-    this.name = name;
-  }
-}
+export class AppComponent {}
