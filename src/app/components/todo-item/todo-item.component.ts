@@ -9,7 +9,7 @@ import { TodoService } from "src/app/services/todo.service";
 })
 export class TodoItemComponent implements OnInit {
   @Input() todo: Todo;
-  @Output() deleteTodo: EventEmitter<Todo> = new EventEmitter();
+  @Output() deleteTodo = new EventEmitter<Todo>();
   constructor(private todoService: TodoService) {}
 
   ngOnInit() {}
